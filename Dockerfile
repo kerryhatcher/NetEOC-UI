@@ -9,7 +9,6 @@ RUN mkdir -p /opt/neteoc-ui
 RUN mkdir -p /opt/neteoc-server
 WORKDIR /opt/neteoc-ui
 
-
 COPY ./package.json /opt/neteoc-ui
 RUN npm install && npm install -g webpack
 
