@@ -1,1 +1,2 @@
-# NetEOC-UI
+# neteoc-ui
+Frontend web app for NetEOC
