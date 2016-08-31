@@ -1,7 +1,5 @@
 import {hawtioPluginLoader } from 'adminjs-core';
 
-;
-
 var User;
 (function (User) {
 
@@ -75,7 +73,7 @@ var User;
 
 
       let updateUser = function () {
-              vm.user.$update({ id: vm.user._id}, function () {
+              vm.user.$update(function () {
                   console.log("user updated");
                   getUser();
               })
@@ -125,7 +123,7 @@ var User;
         console.log("got 401------------------------------")
         //poptastic('/auth/google');
         return false;
-      }
+      };
 
       let logout = function() {
         Auth.logout(function(err) {
