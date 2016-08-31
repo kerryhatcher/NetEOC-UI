@@ -11,7 +11,3 @@ RUN npm install
 
 COPY . /opt/neteoc-ui
 RUN webpack
-
-
-
-
