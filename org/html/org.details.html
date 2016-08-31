@@ -54,6 +54,7 @@
               <th>Email</th>
               <th>Invite Link</th>
               <th>Status</th>
+              <th>Action</th>
             </tr>
             </thead>
             <tbody>
@@ -61,6 +62,7 @@
                 <td>{{ invite.email }}</td>
                 <td><a ng-href="/ui/org/{{ invite.org }}/invite/{{ invite._id }}">link</a></td>
                 <td>{{ invite.status }}</td>
+                <td><button type="button" class="btn btn-danger">Delete Invite</button></td>
             </tr>
             </tbody>
         </table>
