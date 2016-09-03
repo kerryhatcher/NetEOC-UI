@@ -205,7 +205,6 @@ module.exports = function(parentModule) {
             Message.query()
                 .$promise
                 .then(function(messages){
-                    console.log(messages);
                     angular.extend(vm, {
                         messages: messages
                     });
@@ -224,9 +223,7 @@ module.exports = function(parentModule) {
         };
 
         let savemessage = function(){
-            console.log(newmsg);
             Message.save(newmsg, function(){
-                console.log('message saved!')
                 getFlares();
             })
         };
@@ -234,8 +231,7 @@ module.exports = function(parentModule) {
         let getLists = function(){
             List.query()
             .$promise
-            .then(function(lists){
-                console.log(lists);
+            .then(function(lists){;
                 angular.extend(vm, {
                     lists: lists
                 });
